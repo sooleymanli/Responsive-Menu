@@ -1,0 +1,86 @@
+/* Suleymanli Fuad  */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+body{
+    margin:0;
+    font-family: 'Cormorant Garamond', serif;
+        font-size: 28px;
+}
+
+img{
+    width: 55px;
+    height: 55px;
+    padding-top: 15px;
+    display: none;
+}
+
+#checkbox-id{
+    display: none;
+}
+
+header{
+    width: 100%;
+    background-color: #93232E;    
+}
+
+
+.menu ul{
+    list-style-type: none;
+    display: flex;;
+    margin: 0;
+    justify-content: center;
+}
+
+.menu ul li{
+  padding:15px;
+  
+
+}
+
+.menu ul li:hover{
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.menu ul li:hover a{
+    color: darkred;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+
+@media screen and (max-width:768px){
+    .menu{
+        position: absolute;
+        margin-left: -100%;
+        width: 100%;
+        transition: all .5s ease-in-out;
+
+        
+    }
+
+    img{
+        display: block;
+        padding:13px;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+  .menu ul{
+      flex-direction: column;
+      background-color: #93232E;    
+      padding: 10px;
+     
+  }
+  
+
+  #checkbox-id:checked ~ .menu{
+      margin-left:0;
+      transition: all 0.5s ease-in-out;
+
+  }
+}
